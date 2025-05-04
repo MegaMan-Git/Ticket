@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>سامانه خرید بلیت</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">خانه</a></li>
+        <li><a href="/login.html">ورود</a></li>
+        <li><a href="/register.html">ثبت‌نام</a></li>
+        <li><a href="/tickets.html">جستجوی بلیت</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>به سامانه خرید بلیت خوش آمدید</h1>
+      <p>سفر خود را از اینجا آغاز کنید:</p>
+      <form action="/tickets/search" method="GET" class="search-form">
+        <input type="text" name="from" placeholder="مبدا" required />
+        <input type="text" name="to" placeholder="مقصد" required />
+        <button type="submit">جستجوی بلیت</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; ۱۴۰۴ تمامی حقوق محفوظ است.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
